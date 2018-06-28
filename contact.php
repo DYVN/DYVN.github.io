@@ -11,7 +11,7 @@ if (isset(_POST['submit'])) {
     $txt = "You have a new request from " .$name."\n\n".$message;
 
     mail($mailTo, $txt, $headers);
-    header("Location: index.html?mailsend");
+    header("Location: index.html");
 
 
 }
