@@ -156,18 +156,18 @@
               integrity of your idea, we only ask for the basic information regarding your site here
               (How the site looks). If you have links for inspiration, please provide them as well. 
             </h4>
-            <form class="contact-form">
+            <form class="contact-form" action="cotact.php" method="POST">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
                     <label class="bmd-label-floating">Your Name</label>
-                    <input type="email" class="form-control">
+                    <input type="email" name="name" class="form-control">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
                     <label class="bmd-label-floating">Your Email</label>
-                    <input type="email" class="form-control">
+                    <input type="email" name="mail" class="form-control">
                   </div>
                 </div>
               </div>
@@ -187,18 +187,18 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label class="label-control">Datetime Picker</label>
-                    <input type="text" class="form-control datetimepicker" value="10/05/2016"/>
+                    <label class="label-control">Tell us When</label>
+                    <input type="text" name="date" class="form-control datetimepicker" value="10/05/2016"/>
                 </div>
                 </div>
               </div>
               <div class="form-group">
                 <label for="exampleMessage" class="bmd-label-floating">Give us the Deets</label>
-                <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+                <textarea type="email" name="message" class="form-control" rows="4" id="exampleMessage"></textarea>
               </div>
               <div class="row">
                 <div class="col-md-4 ml-auto mr-auto text-center">
-                  <button class="btn btn-primary btn-raised">
+                  <button type="submit" name="submit" class="btn btn-primary btn-raised">
                     Let's DYVN a little more!
                   </button>
                 </div>
